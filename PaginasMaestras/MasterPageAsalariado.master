@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAsalariado.master.cs" Inherits="MasterPageAsalariado" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Página sin título</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<table>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" ForeColor="Blue" Text="Sitio de Asalariados"></asp:Label></td>
+                <td>
+                    <asp:Label ID="lblNombreUser" runat="server" Text="Label"></asp:Label>
+                    <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">Cerrar session</asp:LinkButton></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" PostBackUrl="~/AgregarAsalariado.aspx">Agregar</asp:LinkButton><br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" PostBackUrl="~/EliminarAsalariado.aspx">Eliminar</asp:LinkButton><br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton4" runat="server" Font-Bold="True" PostBackUrl="~/ModificarAsalariado.aspx">Modificar asalariados</asp:LinkButton><br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton3" runat="server" Font-Bold="True" PostBackUrl="~/Default.aspx">Inicio</asp:LinkButton></td>
+                <td>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

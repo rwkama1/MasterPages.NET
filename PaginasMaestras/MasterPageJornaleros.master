@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageJornaleros.master.cs" Inherits="MasterPageJornaleros" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Página sin título</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<table>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" ForeColor="#C00000" Text="Sitio de JORNALEROS"></asp:Label></td>
+                <td>
+                    <asp:Label ID="lblNombreUser" runat="server" Font-Bold="True"></asp:Label>
+                    <asp:Button ID="btnCerrarSession" runat="server" Font-Bold="True" OnClick="btnCerrarSession_Click"
+                        Text="Cerrar sesión" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" Font-Size="Large"
+                        PostBackUrl="~/AgregarJornalero.aspx">Agregar</asp:LinkButton><br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" Font-Size="Large"
+                        PostBackUrl="~/ModificarJornalero.aspx">Modificar</asp:LinkButton><br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton3" runat="server" Font-Bold="True" PostBackUrl="~/Default.aspx" Font-Size="Large">Inicio</asp:LinkButton></td>
+                <td>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
